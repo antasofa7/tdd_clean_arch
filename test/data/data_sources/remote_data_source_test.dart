@@ -19,8 +19,8 @@ void main() {
         WeatherRemoteDataSourceImpl(client: mockHttpClient);
   });
 
-  String lat = '-7.303312';
-  String lon = '112.768557';
+  const lat = '-7.303312';
+  const lon = '112.768557';
 
   group('get current weather', () {
     test('should return weather model when the response code is 200', () async {

@@ -25,15 +25,16 @@ void main() {
       pressure: 1009,
       humidity: 70);
 
-  const testCityName = 'Surabaya';
+  String lat = '-7.303312';
+  String lon = '112.768557';
 
   test('should get current weather detail from the repository', () async {
     // arrange
-    when(mockWeatherRepository.getCurrentWeather(testCityName))
+    when(mockWeatherRepository.getCurrentWeather(lat, lon))
         .thenAnswer((_) async => const Right(testWeatherDetail));
 
     // act
-    final result = await getCurrentWeatherUseCase.execute(testCityName);
+    final result = await getCurrentWeatherUseCase.execute(lat, lon);
 
     // assert
     expect(result, const Right(testWeatherDetail));
