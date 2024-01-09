@@ -9,7 +9,7 @@ class GetCurrentWeatherUseCase {
 
   GetCurrentWeatherUseCase({required this.weatherRepository});
 
-  Future<Either<Failure, WeatherEntity>> execute(String lat, String lan) async {
-    return await weatherRepository.getCurrentWeather(lat, lan);
+  Future<Either<Failure, WeatherEntity>> execute(String lat, String lon) async {
+    return await weatherRepository.getCurrentWeather(lat, lon);
   }
 }

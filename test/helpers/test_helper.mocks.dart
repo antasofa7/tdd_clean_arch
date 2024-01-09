@@ -178,14 +178,14 @@ class MockGetCurrentWeatherUseCase extends _i1.Mock
   @override
   _i6.Future<_i2.Either<_i7.Failure, _i8.WeatherEntity>> execute(
     String? lat,
-    String? lan,
+    String? lon,
   ) =>
       (super.noSuchMethod(
         Invocation.method(
           #execute,
           [
             lat,
-            lan,
+            lon,
           ],
         ),
         returnValue:
@@ -196,7 +196,7 @@ class MockGetCurrentWeatherUseCase extends _i1.Mock
             #execute,
             [
               lat,
-              lan,
+              lon,
             ],
           ),
         )),

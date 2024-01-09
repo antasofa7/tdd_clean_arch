@@ -46,8 +46,8 @@ void main() {
       // act
       final result = weatherRemoteDataSourceImpl.getCurrentWeather(lat, lon);
 
-      print('result: $result');
-      print(throwsA(isA<ServerException>()));
+      // print('result: $result');
+      // print(throwsA(isA<ServerException>()));
 
       // assert
       expect(result, throwsA(isA<ServerException>()));
