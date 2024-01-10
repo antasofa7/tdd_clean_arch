@@ -15,8 +15,7 @@ void main() {
 
   setUp(() {
     mockHttpClient = MockHttpClient();
-    weatherRemoteDataSourceImpl =
-        WeatherRemoteDataSourceImpl(client: mockHttpClient);
+    weatherRemoteDataSourceImpl = WeatherRemoteDataSourceImpl(mockHttpClient);
   });
 
   const lat = '-7.303312';

@@ -11,7 +11,7 @@ part 'weather_state.dart';
 class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
   final GetCurrentWeatherUseCase _getCurrentWeatherUseCase;
 
-  WeatherBloc({required GetCurrentWeatherUseCase getCurrentWeatherUseCase})
+  WeatherBloc(GetCurrentWeatherUseCase getCurrentWeatherUseCase)
       : _getCurrentWeatherUseCase = getCurrentWeatherUseCase,
         super(WeatherEmpty()) {
     on<OnCityChanged>((event, emit) async {

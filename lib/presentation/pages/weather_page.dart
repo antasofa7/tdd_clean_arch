@@ -23,7 +23,7 @@ class WeatherPage extends StatelessWidget {
                   textAlign: TextAlign.center,
                   decoration: InputDecoration(
                       hintText: 'Enter city name',
-                      fillColor: Color(0xffF3F3F3F3),
+                      fillColor: const Color(0xffF3F3F3F3),
                       filled: true,
                       focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide.none,
@@ -82,7 +82,7 @@ class WeatherPage extends StatelessWidget {
                           ]),
                           TableRow(children: [
                             const Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: EdgeInsets.all(8.0),
                                 child: Text('Pressure',
                                     style: TextStyle(
                                         fontSize: 16.0, letterSpacing: 1.2))),
@@ -101,7 +101,7 @@ class WeatherPage extends StatelessWidget {
                                     style: TextStyle(
                                         fontSize: 16.0, letterSpacing: 1.2))),
                             Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 child: Text(state.result.humidity.toString(),
                                     style: const TextStyle(
                                         fontSize: 16.0,

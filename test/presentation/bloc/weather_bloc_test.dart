@@ -14,8 +14,7 @@ void main() {
 
   setUp(() {
     mockGetCurrentWeatherUseCase = MockGetCurrentWeatherUseCase();
-    weatherBloc =
-        WeatherBloc(getCurrentWeatherUseCase: mockGetCurrentWeatherUseCase);
+    weatherBloc = WeatherBloc(mockGetCurrentWeatherUseCase);
   });
 
   const testWeatherDetail = WeatherEntity(

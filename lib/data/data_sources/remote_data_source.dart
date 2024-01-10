@@ -13,7 +13,7 @@ abstract class WeatherRemoteDataSource {
 class WeatherRemoteDataSourceImpl extends WeatherRemoteDataSource {
   final http.Client client;
 
-  WeatherRemoteDataSourceImpl({required this.client});
+  WeatherRemoteDataSourceImpl(this.client);
 
   @override
   Future<WeatherModel> getCurrentWeather(String lat, String lon) async {

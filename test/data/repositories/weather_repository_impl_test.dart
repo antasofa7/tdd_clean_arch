@@ -15,8 +15,7 @@ void main() {
 
   setUp(() {
     mockWeatherRemoteDataSource = MockWeatherRemoteDataSource();
-    weatherRepositoryImpl = WeatherRepositoryImpl(
-        weatherRemoteDataSource: mockWeatherRemoteDataSource);
+    weatherRepositoryImpl = WeatherRepositoryImpl(mockWeatherRemoteDataSource);
   });
 
   const testWeatherModel = WeatherModel(

@@ -11,7 +11,7 @@ import '../data_sources/remote_data_source.dart';
 class WeatherRepositoryImpl extends WeatherRepository {
   final WeatherRemoteDataSource weatherRemoteDataSource;
 
-  WeatherRepositoryImpl({required this.weatherRemoteDataSource});
+  WeatherRepositoryImpl(this.weatherRemoteDataSource);
 
   @override
   Future<Either<Failure, WeatherEntity>> getCurrentWeather(
